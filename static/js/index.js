@@ -40,6 +40,8 @@ function historial(){
   // set callback handlers
   client.onConnectionLost = onConnectionLost;
   client.onMessageArrived = onMessageArrived;
+  client.onMessageArrived = onMessageArrived1;
+
   var options = {
    useSSL: false,
     userName: "luisrod-234@hotmail.com",
@@ -81,5 +83,10 @@ function historial(){
 	  document.getElementById("sensor").innerHTML=message.payloadString;
   }
 
+ // called when a message arrives
+  function onMessageArrived1(message) {
+    console.log("onMessageArrived1:"+message.payloadString);
+	  document.getElementById("sensor").innerHTML=message.payloadString;
+  }
 
   
