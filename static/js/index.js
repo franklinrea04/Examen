@@ -18,6 +18,15 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
+function historial(){	
+	//alert("led off");
+	console.log("Historial led ");
+	message = new Paho.MQTT.Message("HISTORIAL LED");
+    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+
 
 
 
