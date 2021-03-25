@@ -86,7 +86,7 @@ function historial(){
  // called when a message arrives
   function onMessageArrived1(message) {
     console.log("onMessageArrived1:"+message.payloadString);
-	  document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("histori@l").innerHTML=message.payloadString;
   }
 
   
