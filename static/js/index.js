@@ -21,9 +21,9 @@ function LED1_Off(){
 function historial(){	
 	//alert("led off");
 	console.log("Historial led ");
-	message1 = new Paho.MQTT.Message("HISTORIAL LED");
-    	message1.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message1);
+	message = new Paho.MQTT.Message("HISTORIAL LED");
+    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
@@ -40,7 +40,7 @@ function historial(){
   // set callback handlers
   client.onConnectionLost = onConnectionLost;
   client.onMessageArrived = onMessageArrived;
-  client.onMessageArrived1 = onMessageArrived1;
+  
 
   var options = {
    useSSL: false,
@@ -82,12 +82,9 @@ function historial(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  
   }
 
- // called when a message arrives
-  function onMessageArrived1(message1) {
-    console.log("onMessageArrived1:"+message1.payloadString);
-	  document.getElementById("historial").innerHTML=message1.payloadString;
-  }
 
   
