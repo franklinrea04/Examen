@@ -83,12 +83,12 @@ function historial(){
     console.log("onMessageArrived:"+message.payloadString);
 	  y=message.payloadString);
 	  if(y=="hola, el LED se encuentra encendido"){
-	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  document.getElementById("sensor").innerHTML=y;
 	  }
 	  else if(y=="hola, el LED se encuentra apagado"){
-	  document.getElementById("sensor").innerHTML=message.payloadString;
+	  document.getElementById("sensor").innerHTML=y;
 	  }
-	  document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=y;
 	  }
           }
   }
