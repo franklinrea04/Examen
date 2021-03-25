@@ -40,7 +40,7 @@ function historial(){
   // set callback handlers
   client.onConnectionLost = onConnectionLost;
   client.onMessageArrived = onMessageArrived;
-  client.onMessageArrived = onMessageArrived1;
+  client.onMessageArrived1 = onMessageArrived1;
 
   var options = {
    useSSL: false,
