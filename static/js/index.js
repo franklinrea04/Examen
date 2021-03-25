@@ -81,7 +81,7 @@ function historial(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  y=message.payloadString);
+	  y=message.payloadString;
 	  if(y=="hola, el LED se encuentra encendido"){
 	  document.getElementById("sensor").innerHTML=y;
 	  }
