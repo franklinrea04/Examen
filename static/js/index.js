@@ -89,7 +89,7 @@ function historial(){
 	  document.getElementById("sensor").innerHTML=y;
 	  }
 	  document.getElementById("historial").innerHTML=y;
-	  }
+	  
           }
   }
 
