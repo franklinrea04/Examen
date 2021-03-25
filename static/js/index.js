@@ -89,6 +89,7 @@ function historial(){
 	  document.getElementById("sensor").innerHTML=y;
 	  } else {
 	  document.getElementById("historial").innerHTML=y;
+	  document.getElementById("sensor").innerHTML="";
           }
   }
 
