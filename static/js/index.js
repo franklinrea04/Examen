@@ -18,9 +18,9 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function toggleColor(){
+function EncendidoApagado(){
       var elem = document.getElementById("a");
-      elem.style.color = elem.style.color == "red" ? "blue" : "red";
+      elem.style.color = elem.style.color == "red" ? "green" : "red";
     }
 
 function historial(){	
