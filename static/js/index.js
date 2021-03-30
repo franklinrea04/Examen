@@ -91,14 +91,7 @@ function historial(){
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
           }
-	  else if (y=="1"){
-		  c=0;
-		  n=0;
-		  while(c==0){
-		  n+=1;
-		  document.getElementById("historial").innerHTML=n;}
-		  
-	  }
+	  
   }
 
 
