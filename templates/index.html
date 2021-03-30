@@ -19,21 +19,10 @@ LED1_OFF!</button>
 HISTORIAL!</button>
 <button id = 'encender' type="checkbutton" onclick="encender();">
 LED_2!</button>
-<!-- call 'toggleState' whenever clicked -->
-<input type="button" id="btn" value="button" 
- class="off" onclick="toggleState(this)" />
 
 
 <script>
-function toggleState(item){
-           if(item.className == "on") {
-              item.className="off";
-           } else {
-              item.className="on";
-           }
-        }
-	
-	
+
 	/*
 function LED1_On() {
 	alert("led on");
