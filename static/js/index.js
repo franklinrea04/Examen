@@ -19,7 +19,7 @@ function LED1_Off(){
 }
 
 function EncendidoApagado(){
-      var elem = document.getElementById("a");
+      var elem = document.getElementById("sensor");
       elem.style.color = elem.style.color == "red" ? "green" : "red";
 	if(elem.style.color=="red"){
 	document.getElementById("sensor").innerHTML="led off";
