@@ -21,7 +21,7 @@ function LED1_Off(){
 function encender(){	
 	//alert("led off");
 	console.log("prueba1");
-	if(buttonOn){
+	if(encender){
 		turnOff();
 	        message = new Paho.MQTT.Message("Apagar");
     	        message.destinationName = "luisrod-234@hotmail.com/test1";
