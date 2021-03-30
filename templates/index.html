@@ -17,12 +17,15 @@ LED1 ON!</button>
 LED1_OFF!</button>
 <button id = 'histori@l' type="button" onclick="historial();">
 HISTORIAL!</button>
-<button id = 'encender' type="checkbutton" onclick="encender();">
-LED_2!</button>
+<h1 id="a">Hola Mundo</h1>
+<button onclick="toggleColor();">ok</button>	
 
 
 <script>
-
+function toggleColor(){
+      var elem = document.getElementById("a");
+      elem.style.color = elem.style.color == "red" ? "blue" : "red";
+    }
 	/*
 function LED1_On() {
 	alert("led on");
