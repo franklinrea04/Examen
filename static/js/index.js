@@ -87,14 +87,6 @@ function historial(){
 	  }
 	  else if(y=="hola, el LED se encuentra apagado"){
 	  document.getElementById("sensor").innerHTML=y;
-	  } else if(y=="1"){
-	  c=0;
-	  n=0;
-	  while(c==0){
-		  n=n+c;
-		  n++;
-		  document.getElementById("historial").innerHTML=n;}
-		  
 	  }else{
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
