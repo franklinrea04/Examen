@@ -91,7 +91,7 @@ function historial(){
 	  c=0;
 	  n=0;
 	  while(c==0){
-		  n=n+c
+		  n=n+c;
 		  n++;
 		  document.getElementById("historial").innerHTML=n;}
 		  
