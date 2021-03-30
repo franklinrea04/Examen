@@ -18,22 +18,10 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function encender(){	
-	//alert("led off");
-	console.log("prueba1");
-	if(encender){
-		turnOff();
-	        message = new Paho.MQTT.Message("Apagar");
-    	        message.destinationName = "luisrod-234@hotmail.com/test1";
-    	        client.send(message);
-	} else{
-		turnOn();
-		message = new Paho.MQTT.Message("Encender");
-    	        message.destinationName = "luisrod-234@hotmail.com/test1";
-    	        client.send(message);
-	}
-	//document.getElementById("sensor").innerHTML="led off";   
-}
+function toggleColor(){
+      var elem = document.getElementById("a");
+      elem.style.color = elem.style.color == "red" ? "blue" : "red";
+    }
 
 function historial(){	
 	//alert("led off");
