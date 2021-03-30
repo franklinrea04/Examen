@@ -18,6 +18,23 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
+function encender(){	
+	//alert("led off");
+	console.log("prueba1");
+	if(buttonOn){
+		turnOff();
+	        message = new Paho.MQTT.Message("Apagar");
+    	        message.destinationName = "luisrod-234@hotmail.com/test1";
+    	        client.send(message);
+	} else{
+		turnOn();
+		message = new Paho.MQTT.Message("Encender");
+    	        message.destinationName = "luisrod-234@hotmail.com/test1";
+    	        client.send(message);
+	}
+	//document.getElementById("sensor").innerHTML="led off";   
+}
+
 function historial(){	
 	//alert("led off");
 	console.log("Historial led ");
@@ -26,10 +43,6 @@ function historial(){
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
-
-
-
-
 
 
 // Create a client instance
@@ -87,7 +100,12 @@ function historial(){
 	  }
 	  else if(y=="hola, el LED se encuentra apagado"){
 	  document.getElementById("sensor").innerHTML=y;
-	  }else{
+	  }else if(y=="ENCENDER"){
+	  document.getElementById("encender").innerHTML=Encendido;
+	  }else if(y=="APAGAR"){
+	  document.getElementById("encender").innerHTML=Apagado;
+	  }	  
+	  else {
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
           } 
