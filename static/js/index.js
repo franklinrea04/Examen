@@ -22,12 +22,12 @@ function EncendidoApagado(){
       var elem = document.getElementById("sensor");
       elem.style.color = elem.style.color == "red" ? "green" : "red";
 	if(elem.style.color=="green"){
-	document.getElementById("sensor").innerHTML="OFF";
+	document.getElementById("sensor").innerHTML="ON";
 	message = new Paho.MQTT.Message("ON");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);	
 	}else{
-	document.getElementById("sensor").innerHTML="ON";
+	document.getElementById("sensor").innerHTML="OFF";
 	message = new Paho.MQTT.Message("OFF");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);	
