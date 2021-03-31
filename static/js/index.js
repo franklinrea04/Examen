@@ -22,9 +22,9 @@ function EncendidoApagado(){
       var elem = document.getElementById("sensor");
       elem.style.color = elem.style.color == "red" ? "green" : "red";
 	if(elem.style.color=="red"){
-	document.getElementById("sensor").innerHTML="led off";
+	document.getElementById("sensor").innerHTML="OFF";
 	}else{
-	document.getElementById("sensor").innerHTML="led on";
+	document.getElementById("sensor").innerHTML="ON";
 	}
     }
 
