@@ -20,7 +20,7 @@ function LED1_Off(){
 
 function EncendidoApagado(){
       var elem = document.getElementById("sensor");
-      elem.style.color = elem.style.color == "red" ? "green" : "red";
+      elem.style.color = elem.style.color == "green" ? "red" : "green";
 	if(elem.style.color=="green"){
 	document.getElementById("sensor").innerHTML="ON";
 	message = new Paho.MQTT.Message("ON");
