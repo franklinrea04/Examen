@@ -28,7 +28,7 @@ function EncendidoApagado(){
     	client.send(message);	
 	}else{
 	document.getElementById("sensor").innerHTML="ON";
-	message = new Paho.MQTT.Message("OFF");
+	message = new Paho.MQTT.Message("ON");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);	
 	}
@@ -96,15 +96,12 @@ function historial(){
 	  y=message.payloadString;
 	  if(y=="hola, el LED se encuentra encendido"){
 	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML="";
 	  }
 	  else if(y=="hola, el LED se encuentra apagado"){
 	  document.getElementById("sensor").innerHTML=y;
-	  }else if(y=="ENCENDER"){
-	  document.getElementById("encender").innerHTML=Encendido;
-	  }else if(y=="APAGAR"){
-	  document.getElementById("encender").innerHTML=Apagado;
-	  }	  
-	  else {
+	  document.getElementById("historial").innerHTML="";	  
+	  }else {
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
           } 
