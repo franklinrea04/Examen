@@ -124,7 +124,6 @@ function E_actual(){
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
 	  document.getElementById("estadoactual").innerHTML=""	  
-          } 
 	  }
 	  
   }
