@@ -111,7 +111,7 @@ function E_actual(){
 	  document.getElementById("sensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";	  
 	  }
-	  else if{(y=="ESTADO ACTUAL ENCENDIDO"){
+	  else if(y=="ESTADO ACTUAL ENCENDIDO"){
 	  document.getElementById("estadoactual").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
 	  document.getElementById("historial").innerHTML="";
