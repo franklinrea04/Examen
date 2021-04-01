@@ -43,6 +43,15 @@ function historial(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
+function E_actual(){	
+	//alert("led off");
+	console.log("Estado Actual ");
+	message = new Paho.MQTT.Message("conocer estado");
+    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+
 
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
@@ -101,10 +110,22 @@ function historial(){
 	  else if(y=="hola, el LED se encuentra apagado"){
 	  document.getElementById("sensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";	  
+	  }
+	  else if{(y=="ESTADO ACTUAL ENCENDIDO"){
+	  document.getElementById("estadoactual").innerHTML=y;
+	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("historial").innerHTML="";
+          }
+          else if(y="ESTADO ACTUAL APAGADO"){
+	  document.getElementById("estadoactual").innerHTML=y;
+	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("historial").innerHTML="";
 	  }else {
 	  document.getElementById("historial").innerHTML=y;
 	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("estadoactual").innerHTML=""	  
           } 
+	  }
 	  
   }
 
