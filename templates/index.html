@@ -9,25 +9,17 @@
 
 <h1>Embebidos</h1>
 <img id="imagen" src="/static/images/iot.png" alt="user">
-<h1>Estado:</h><h id="sensor">--</h1>
-<h1>Historial:</h><h id="historial">--</h1>	
-<h1>Estado Actual:</h><h id="estadoactual">--</h1>		
+<h1>Hora:</h><h id="hora">--</h1>
+<h1>Minutos:</h><h id="minutos">--</h1>	
+<h1>Segundos:</h><h id="segundos">--</h1>		
 <button id = 'LED1On'type="button" onclick="LED1_On();">
 LED1 ON!</button>
 <button id = 'LED1Off' type="button" onclick="LED1_Off();">
 LED1_OFF!</button>
 <button id = 'histori@l' type="button" onclick="historial();">
-HISTORIAL!</button>
-<FORM name=formclave>
-<INPUT type=password name=clave>
-<INPUT type=button value=Acceder>
-</FORM>
-	
+HISTORIAL!</button>	
 	
 <script>
- function acceso(){
-   	window.location = document.formclave.clave.value + ".html"
-}
 	//function toggleColor(){
   //    var elem = document.getElementById("a");
     //  elem.style.color = elem.style.color == "red" ? "blue" : "red";
