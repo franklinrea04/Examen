@@ -18,12 +18,14 @@ LED1 ON!</button>
 LED1_OFF!</button>
 <button id = 'histori@l' type="button" onclick="historial();">
 HISTORIAL!</button>
-<button id='btn' onclick="EncendidoApagado();">Encendido/Apagado!</button>	
-<button id = 'eactual' type="button" onclick="E_actual();">
-Estado Actual!</button>
+<input id="entrada" onkeyup="escribir2()">
+<div id="cont3"></div>
 
 <script>
-//function toggleColor(){
+function escribir2() {
+valor = document.getElementById('entrada').value;
+document.getElementById('cont3').innerHTML=' '+valor;} 
+	//function toggleColor(){
   //    var elem = document.getElementById("a");
     //  elem.style.color = elem.style.color == "red" ? "blue" : "red";
     //}
