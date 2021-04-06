@@ -40,7 +40,7 @@ function contrasena(){
 	//alert("led off");
 	var pwd = document.getElementById("pass").value;
 	console.log(pwd);
-	/*if(pw.value=="12345a"){
+	if(pwd.value=="12345a"){
 	console.log("Contraseña Correcta");
 	alert("Constraseña Correcta");
 	pw.focus();
@@ -52,7 +52,7 @@ function contrasena(){
 	console.log("Contraseña Incorrecta");
 	alert("Constraseña Incorrecta");
 	pw.focus();
-	}*/
+	}
 }
 
 // Create a client instance
