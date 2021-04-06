@@ -36,6 +36,16 @@ function LED2_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
+function Enviar{	
+	//alert("led off");
+	console.log("password");
+	pw=document.getElementById(pw)
+	message = new Paho.MQTT.Message(pw);
+    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
