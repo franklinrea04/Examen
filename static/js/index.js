@@ -40,6 +40,7 @@ function contrasena(){
 	//alert("led off");
 	var pwd = document.getElementById("pass").value;
 	console.log(pwd);
+	document.getElementById("led2").innerHTML=pwd;
 	if(pwd=="12345a"){
 	console.log("Contraseña Correcta");
 	alert("Constraseña Correcta");
