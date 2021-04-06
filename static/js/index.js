@@ -36,7 +36,7 @@ function LED2_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function Enviar{	
+function Enviar(){	
 	//alert("led off");
 	console.log("password");
 	pw=document.getElementById(pw)
