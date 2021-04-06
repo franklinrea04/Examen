@@ -39,8 +39,8 @@ function LED2_Off(){
 function contrasena(){	
 	//alert("led off");
 	pw=document.getElementById(pw)
-	console.log("contraseña");
-	if(pw.value=="12345a"){
+	console.log(pw);
+	/*if(pw.value=="12345a"){
 	console.log("Contraseña Correcta");
 	alert("Constraseña Correcta");
 	pw.focus();
@@ -52,7 +52,7 @@ function contrasena(){
 	console.log("Contraseña Incorrecta");
 	alert("Constraseña Incorrecta");
 	pw.focus();
-	}
+	}*/
 }
 
 // Create a client instance
