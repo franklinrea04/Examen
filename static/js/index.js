@@ -38,7 +38,7 @@ function LED2_Off(){
 
 function contrasena(){	
 	//alert("led off");
-	var pwd = document.getElementById("pass").value;
+	var pwd = parseInt( $("pass").val() );
 	console.log(pwd);
 	document.getElementById("led2").innerHTML=pwd;
 	if(pwd=="12345a"){
