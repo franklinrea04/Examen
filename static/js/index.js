@@ -1,6 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
+/*function LED1_On() {
 	//alert("led on");
 	console.log("led on");
 	//document.getElementById("sensor").innerHTML="led on";
@@ -16,9 +16,9 @@ function LED1_Off(){
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
-}
+}*/
 
-function EncendidoApagado(){
+/*function EncendidoApagado(){
       var elem = document.getElementById("sensor");
       elem.style.color = elem.style.color == "green" ? "red" : "green";
 	if(elem.style.color=="green"){
@@ -50,7 +50,7 @@ function E_actual(){
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
-}
+}*/
 
 
 // Create a client instance
@@ -103,27 +103,16 @@ function E_actual(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  y=message.payloadString;
-	  if(y=="hola, el LED se encuentra encendido"){
-	  document.getElementById("sensor").innerHTML=y;
-	  document.getElementById("historial").innerHTML="";
+	  if(y=="hola, el LED1 se encuentra encendido"){
+	  document.getElementById("led1").innerHTML="ON";
 	  }
-	  else if(y=="hola, el LED se encuentra apagado"){
-	  document.getElementById("sensor").innerHTML=y;
-	  document.getElementById("historial").innerHTML="";	  
-	  }
-	  else if(y=="ESTADO ACTUAL ENCENDIDO"){
-	  document.getElementById("estadoactual").innerHTML=y;
-	  document.getElementById("sensor").innerHTML="";
-	  document.getElementById("historial").innerHTML="";
-          }
-          else if(y="ESTADO ACTUAL APAGADO"){
-	  document.getElementById("estadoactual").innerHTML=y;
-	  document.getElementById("sensor").innerHTML="";
-	  document.getElementById("historial").innerHTML="";
-	  }else {
-	  document.getElementById("historial").innerHTML=y;
-	  document.getElementById("sensor").innerHTML="";
-	  document.getElementById("estadoactual").innerHTML=""	  
+	  else if(y=="hola, el LED1 se encuentra apagado"){
+	  document.getElementById("led1").innerHTML="OFF";	  
+	  } elseif(y=="hola, el LED2 se encuentra encendido"){
+	  document.getElementById("led2").innerHTML="ON";
+	  }else{
+	  document.getElementById("led2").innerHTML="OFF";
+	  
 	  }
 	  
   }
