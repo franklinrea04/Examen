@@ -112,7 +112,8 @@ function contrasena(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	 var y= message.payloadString;
-	  var t=y.split(" ", [2])
+	  var t=y[1]
+	  //var t=y.split(" ", [2])
 	  document.getElementById("minutos").innerHTML=t;
   }
   
