@@ -39,11 +39,20 @@ function LED2_Off(){
 function contrasena(){	
 	//alert("led off");
 	pw=document.getElementById(pw)
-	console.log("constraseña");
-	message = new Paho.MQTT.Message(pw);
+	console.log("contraseña");
+	if(pw.value=="12345a"){
+	console.log("Contraseña Correcta");
+	alert("Constraseña Correcta");
+	pw.focus();
+	message = new Paho.MQTT.Message("Contrasena Correcta");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
+	}else{
+	console.log("Contraseña Incorrecta");
+	alert("Constraseña Incorrecta");
+	pw.focus();
+	}
 }
 
 // Create a client instance
