@@ -48,6 +48,13 @@ function contrasena(){
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
+	}else if(pwd=="12345b"){
+	console.log("Contraseña Correcta");
+	alert("Constraseña Correcta");
+	pw.focus();
+	message = new Paho.MQTT.Message("Contrasena Correcta1");
+    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	client.send(message);
 	}else{
 	console.log("Contraseña Incorrecta");
 	alert("Constraseña Incorrecta");
