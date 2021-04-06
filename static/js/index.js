@@ -36,9 +36,9 @@ function LED2_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function Enviar(){	
+function Enviar(pw){	
 	//alert("led off");
-	pwd=document.getElementById(pw)
+	pw=document.getElementById(pw)
 	console.log(pwd);
 	//message = new Paho.MQTT.Message(pwd.value);
     	message.destinationName = "luisrod-234@hotmail.com/test1";
