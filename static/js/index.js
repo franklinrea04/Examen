@@ -40,7 +40,7 @@ function contrasena(){
 	//alert("led off");
 	var pwd = document.getElementById("pass").value;
 	console.log(pwd);
-	if(pwd.value=="12345a"){
+	if(pwd=="12345a"){
 	console.log("Contraseña Correcta");
 	alert("Constraseña Correcta");
 	pw.focus();
