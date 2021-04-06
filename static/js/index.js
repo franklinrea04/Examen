@@ -1,6 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
+/*function LED1_On() {
 	//alert("led on");
 	console.log("led1 on");
 	//document.getElementById("sensor").innerHTML="led on";
@@ -60,7 +60,7 @@ function contrasena(){
 	alert("Constraseña Incorrecta");
 	pw.focus();
 	}
-}
+}*/
 
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
@@ -112,26 +112,8 @@ function contrasena(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  y=message.payloadString;
-	  if(y=="hola, el LED1 se encuentra encendido"){
-	  document.getElementById("led1").innerHTML="ON";
-	  document.getElementById("historial").innerHTML="";
-	  document.getElementById("pw").value="";	  
-	  } else if(y=="hola, el LED1 se encuentra apagado"){
-	  document.getElementById("led1").innerHTML="OFF";
-	  document.getElementById("historial").innerHTML="";
-	  document.getElementById("pw").value="";  
-	  } else if(y=="hola, el LED2 se encuentra encendido"){
-	  document.getElementById("led2").innerHTML="ON";
-	  document.getElementById("historial").innerHTML="";
-	  document.getElementById("pw").value="";	  
-	  }else if(y=="hola, el LED2 se encuentra apagado"){
-	  document.getElementById("led2").innerHTML="OFF";
-	  document.getElementById("historial").innerHTML="";
-	  document.getElementById("pw").value="";	  
-	  }else{
-	  document.getElementById("historial").innerHTML=y;
-	  document.getElementById("pw").value="";	  
-	  }
+	  var h=str.length(y)
+	  console.log("h");
 	  
   }
   
