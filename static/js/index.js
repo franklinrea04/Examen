@@ -1,10 +1,10 @@
 //https://www.eclipse.org/paho/clients/js/
 
-/*function LED1_On() {
+function LED1_On() {
 	//alert("led on");
-	console.log("led on");
+	console.log("led1 on");
 	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON");
+	message = new Paho.MQTT.Message("ON_led1");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
   
@@ -12,46 +12,11 @@
 function LED1_Off(){	
 	//alert("led off");
 	console.log("led off");
-	message = new Paho.MQTT.Message("OFF");
+	message = new Paho.MQTT.Message("OFF_led1");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
-
-function EncendidoApagado(){
-      var elem = document.getElementById("sensor");
-      elem.style.color = elem.style.color == "green" ? "red" : "green";
-	if(elem.style.color=="green"){
-	document.getElementById("sensor").innerHTML="ON";
-	message = new Paho.MQTT.Message("ON");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);	
-	}else{
-	document.getElementById("sensor").innerHTML="OFF";
-	message = new Paho.MQTT.Message("OFF");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);	
-	}
-    }
-
-function historial(){	
-	//alert("led off");
-	console.log("Historial led ");
-	message = new Paho.MQTT.Message("HISTORIAL LED");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
-}
-
-function E_actual(){	
-	//alert("led off");
-	console.log("Estado Actual ");
-	message = new Paho.MQTT.Message("conocer estado");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
-}*/
-
 
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
