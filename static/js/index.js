@@ -36,10 +36,10 @@ function LED2_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function Enviar(pw){	
+function contrasena(pw){	
 	//alert("led off");
 	pw=document.getElementById(pw)
-	console.log(pwd);
+	console.log(pw);
 	//message = new Paho.MQTT.Message(pwd.value);
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
