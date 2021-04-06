@@ -20,9 +20,11 @@ LED1 OFF!</button>
 <button id = 'LED2Off'type="button" onclick="LED2_Off();">
 LED2 OFF!</button></p>	
 <h1>Ingrese la contraseña:</h><h id="pass"></h1>
-<p><input type='password' name='password' id='pw' placeholder='Contraseña' style='margin-top:10px; background-color:#FFF'>
-<button id = 'enviar'type="button" onclick="Enviar();">
-Enviar!</button></p>
+<form id="contrasena"  onSubmit="return contrasena('pw')">
+<input type='password' name='password' id='pw' placeholder='Contraseña' style='margin-top:10px; background-color:#FFF' /><br />
+<input id='boton' type="submit" />
+</FORM>
+	
 <script>
 /*
 function LED1_On() {
