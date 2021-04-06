@@ -38,8 +38,8 @@ function LED2_Off(){
 
 function contrasena(){	
 	//alert("led off");
-	pw=document.getElementById(pw)
-	console.log(pw);
+	pwd=document.getElementById(pw.toString())
+	console.log(pwd);
 	/*if(pw.value=="12345a"){
 	console.log("Contraseña Correcta");
 	alert("Constraseña Correcta");
