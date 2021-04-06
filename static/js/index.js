@@ -107,7 +107,7 @@ function E_actual(){
 	  document.getElementById("led1").innerHTML="ON";
 	  } else if(y=="hola, el LED1 se encuentra apagado"){
 	  document.getElementById("led1").innerHTML="OFF";	  
-	  } elseif(y=="hola, el LED2 se encuentra encendido"){
+	  } else if(y=="hola, el LED2 se encuentra encendido"){
 	  document.getElementById("led2").innerHTML="ON";
 	  }else{
 	  document.getElementById("led2").innerHTML="OFF";
