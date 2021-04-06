@@ -16,9 +16,9 @@ function LED1_Off(){
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
-}*/
+}
 
-/*function EncendidoApagado(){
+function EncendidoApagado(){
       var elem = document.getElementById("sensor");
       elem.style.color = elem.style.color == "green" ? "red" : "green";
 	if(elem.style.color=="green"){
@@ -105,17 +105,13 @@ function E_actual(){
 	  y=message.payloadString;
 	  if(y=="hola, el LED1 se encuentra encendido"){
 	  document.getElementById("led1").innerHTML="ON";
-	  }
-	  else if(y=="hola, el LED1 se encuentra apagado"){
+	  } else if(y=="hola, el LED1 se encuentra apagado"){
 	  document.getElementById("led1").innerHTML="OFF";	  
 	  } elseif(y=="hola, el LED2 se encuentra encendido"){
 	  document.getElementById("led2").innerHTML="ON";
 	  }else{
 	  document.getElementById("led2").innerHTML="OFF";
-	  
 	  }
 	  
   }
-
-
   
