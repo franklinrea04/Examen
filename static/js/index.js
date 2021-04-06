@@ -39,8 +39,8 @@ function LED2_Off(){
 function contrasena(pw){	
 	//alert("led off");
 	pw=document.getElementById(pw)
-	console.log(pw);
-	//message = new Paho.MQTT.Message(pwd.value);
+	console.log("constraseña");
+	message = new Paho.MQTT.Message(pw);
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
