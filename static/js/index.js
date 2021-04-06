@@ -112,8 +112,10 @@ function contrasena(){
 	  document.getElementById("led1").innerHTML="OFF";	  
 	  } else if(y=="hola, el LED2 se encuentra encendido"){
 	  document.getElementById("led2").innerHTML="ON";
-	  }else{
+	  }else if(y=="hola, el LED2 se encuentra apagado"){
 	  document.getElementById("led2").innerHTML="OFF";
+	  }else{
+	  document.getElementById("historial").innerHTML=y;
 	  }
 	  
   }
