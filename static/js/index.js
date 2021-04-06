@@ -111,9 +111,8 @@ function contrasena(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  y=message.payloadString;
-	  var h=str.length(y)
-	  console.log("h");
-	  
+	 var y= message.payloadString;
+	  var t=y.split(" ",3)
+	  document.getElementById("minutos").innerHTML=t;
   }
   
