@@ -75,7 +75,7 @@ function contrasena(){
   var options = {
    useSSL: false,
     userName: "luisrod-234@hotmail.com",
-    password: "Embebidos2021",
+    password: "Clave",
     onSuccess:onConnect,
     onFailure:doFail
   }
