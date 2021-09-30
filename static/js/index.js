@@ -83,7 +83,7 @@ function historial(){
 	  document.getElementById("estadosensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";
 	  } 
-	  else if(y=="hola, el sensor 2 se encuentra apagado"){
+	  else if(y=="hola, el sensor 1 se encuentra apagado"){
 	  document.getElementById("estadosensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";	  
 	  }
