@@ -5,7 +5,7 @@ function Sensor1_(){
 	console.log("Estado sensor 1");
 	//document.getElementById("sensor").innerHTML="led on";
 	message = new Paho.MQTT.Message("estado1");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	message.destinationName = "alexfra2015@gmail.com/test1";
     	client.send(message);
   
 }
@@ -13,7 +13,7 @@ function Sensor2_(){
 	//alert("led off");
 	console.log("EStado sensor 2");
 	message = new Paho.MQTT.Message("estado22");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	message.destinationName = "alexfra2015@gmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
@@ -22,7 +22,7 @@ function historial(){
 	//alert("led off");
 	console.log("Historial led ");
 	message = new Paho.MQTT.Message("h");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
+    	message.destinationName = "alexfra2015@gmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
@@ -41,8 +41,8 @@ function historial(){
 
   var options = {
    useSSL: false,
-    userName: "luisrod-234@hotmail.com",
-    password: "Embebidos2021",
+    userName: "alexfra2015@gmail.com",
+    password: "1020alex**",
     onSuccess:onConnect,
     onFailure:doFail
   }
@@ -55,10 +55,10 @@ function historial(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("luisrod-234@hotmail.com/test");
-    client.subscribe("luisrod-234@hotmail.com/test2");
+    client.subscribe("alexfra2015@gmail.com.com/test");
+    client.subscribe("alexfra2015@gmail.com.com/test2");
     message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "luisrod-234@hotmail.com/test1";
+    message.destinationName = "alexfra2015@gmail.com.com/test1";
     client.send(message);
 	
   }
