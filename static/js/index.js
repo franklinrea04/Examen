@@ -79,19 +79,19 @@ function historial(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	 y= message.payloadString;
-	 if(y=="hola, el sensor 1 se encuentra encendido"){
+	 if(y=="sensor 1 encendido"){
 	  document.getElementById("estadosensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";
 	  } 
-	  else if(y=="hola, el sensor 1 se encuentra apagado"){
+	  else if(y=="sensor 1 apagado"){
 	  document.getElementById("estadosensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";	  
 	  }
-	  else if(y=="hola, el sensor 2 se encuentra encendido") {
+	  else if(y=="sensor 2 encendido") {
 	  document.getElementById("estadosensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";
 	  }
-	  else if(y=="hola, el sensor 2 se encuentra apagado"){
+	  else if(y=="sensor 2 apagado"){
 	  document.getElementById("estadosensor").innerHTML=y;
 	  document.getElementById("historial").innerHTML="";	 
 	  } else {
