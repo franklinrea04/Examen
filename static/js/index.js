@@ -1,66 +1,24 @@
 //https://www.eclipse.org/paho/clients/js/
 
-/*function LED1_On() {
+function Sensor1_() {
 	//alert("led on");
-	console.log("led1 on");
+	console.log("Estado sensor 1");
 	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON_led1");
+	message = new Paho.MQTT.Message("estado1");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
   
 }
-function LED1_Off(){	
+function Sensor2_(){	
 	//alert("led off");
-	console.log("led1 off");
-	message = new Paho.MQTT.Message("OFF_led1");
+	console.log("EStado sensor 2");
+	message = new Paho.MQTT.Message("estado22");
     	message.destinationName = "luisrod-234@hotmail.com/test1";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function LED2_On() {
-	//alert("led on");
-	console.log("led2 on");
-	//document.getElementById("sensor").innerHTML="led on";
-	message = new Paho.MQTT.Message("ON_led__2");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);
-  
-}
-function LED2_Off(){	
-	//alert("led off");
-	console.log("led2 off");
-	message = new Paho.MQTT.Message("OFF_led__2");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
-}
 
-function contrasena(){	
-	//alert("led off");
-	var pwd = document.getElementById('pw').value;
-	console.log('Contraseña');
-	if(pwd=="12345a"){
-	console.log("Contraseña Correcta");
-	alert("Constraseña Correcta");
-	pw.focus();
-	message = new Paho.MQTT.Message("Contrasena Correcta");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);
-	//document.getElementById("sensor").innerHTML="led off";
-	}else if(pwd=="12345b"){
-	console.log("Contraseña Correcta");
-	alert("Constraseña Correcta");
-	pw.focus();
-	message = new Paho.MQTT.Message("Contrasena Correcta1");
-    	message.destinationName = "luisrod-234@hotmail.com/test1";
-    	client.send(message);
-	}else{
-	console.log("Contraseña Incorrecta");
-	alert("Constraseña Incorrecta");
-	pw.focus();
-	}
-}*/
 
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
@@ -112,12 +70,24 @@ function contrasena(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	 y= message.payloadString;
-	 t=y.split(':');
-	 z0=t[0];
-	 z1=t[1];
-	 z2=t[2]; 
-	 document.getElementById("hora").innerHTML=z0;
-	 document.getElementById("minutos").innerHTML=z1;
-	 document.getElementById("segundos").innerHTML=z2;
+	 if(y=="hola, el sensor 1 se encuentra encendido"){
+	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML="";
+	  } 
+	  else if(y=="hola, el sensor 2 se encuentra apagado"){
+	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML="";	  
+	  }
+	  else if(y=="hola, el sensor 2 se encuentra encendido") {
+	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML=;
+	  }
+	  else if(y==(y=="hola, el sensor 2 se encuentra apagado"){
+	  document.getElementById("sensor").innerHTML=y;
+	  document.getElementById("historial").innerHTML=;	 
+	  } else {
+	  document.getElementById("sensor").innerHTML="";
+	  document.getElementById("historial").innerHTML=y;
+	  }
   }
   
