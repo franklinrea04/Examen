@@ -1,6 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function Sensor1_() {
+function Sensor1_(){
 	//alert("led on");
 	console.log("Estado sensor 1");
 	//document.getElementById("sensor").innerHTML="led on";
@@ -89,11 +89,11 @@ function historial(){
 	  }
 	  else if(y=="hola, el sensor 2 se encuentra encendido") {
 	  document.getElementById("sensor").innerHTML=y;
-	  document.getElementById("historial").innerHTML=;
+	  document.getElementById("historial").innerHTML="";
 	  }
 	  else if(y==(y=="hola, el sensor 2 se encuentra apagado"){
 	  document.getElementById("sensor").innerHTML=y;
-	  document.getElementById("historial").innerHTML=;	 
+	  document.getElementById("historial").innerHTML="";	 
 	  } else {
 	  document.getElementById("sensor").innerHTML="";
 	  document.getElementById("historial").innerHTML=y;
